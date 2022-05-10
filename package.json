@@ -1,6 +1,6 @@
 {
   "name": "18-Social-Network-API",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "Social Network Mongo DB Based API",
   "scripts": {
