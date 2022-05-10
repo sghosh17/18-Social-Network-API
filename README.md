@@ -22,7 +22,7 @@ The user should download Node and Mongo DB. The application also requires the Mo
 
 To start the application, run npm start which will start the API application. You can then use Insomnia to invoke the API functions and view their results.
 
-Click [here](https://drive.google.com/file/d/1NrIDn6jcLjVvnFSi3Nok8ffeZ6YkdwVQ/view) to see the walkthrough video.
+Click [here](https://drive.google.com/file/d/1aY6kYcHkGe3tmOs6XwcaBIq2ojHy8iPQ/view) to see the walkthrough video.
 
 ## License
 
