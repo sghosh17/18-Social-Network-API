@@ -11,15 +11,8 @@ const {
 
 router.route("/").get(fetchAllUsers).post(createNewUser);
 
-router
-  .route("/:id")
-  .get(fetchUserById)
-  .put(updateUserById)
-  .delete(deleteUserById);
+router.route("/:id").get(fetchUserById).put(updateUserById).delete(deleteUserById);
 
-router
-  .route("/:userId/friends/:friendId")
-  .post(addUserFriend)
-  .delete(removeUserFriend);
+router.route("/:userId/friends/:friendId").post(addUserFriend).delete(removeUserFriend);
 
 module.exports = router;
