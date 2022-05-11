@@ -11,7 +11,7 @@ const thoughtController = {
         res.status(400).json(err);
       });
   },
-  fetchThoughtById({ params }, res) {
+  getSingleThought({ params }, res) {
     Thought.findOne({ _id: params.thoughtId })
       .select("-__v")
       .then((dbThoughtData) => {
@@ -44,7 +44,7 @@ const thoughtController = {
       })
       .catch((err) => res.json(err));
   },
-  updateThoughtById({ params, body }, res) {
+  updateThought({ params, body }, res) {
     Thought.findOneAndUpdate({ _id: params.thoughtId }, body, {
       runValidators: true,
       new: true,
@@ -58,7 +58,7 @@ const thoughtController = {
       })
       .catch((err) => res.status(400).json(err));
   },
-  deleteThoughtById({ params }, res) {
+  deleteThought({ params }, res) {
     Thought.findOneAndDelete({ _id: params.thoughtId })
       .then((deletedThought) => {
         if (!deletedThought) {
